@@ -1,7 +1,7 @@
-package com.devsuperior.hspayroll.resources;
+package com.devsuperior.hrpayroll.resources;
 
-import com.devsuperior.hspayroll.entities.Payment;
-import com.devsuperior.hspayroll.services.PaymentService;
+import com.devsuperior.hrpayroll.entities.Payment;
+import com.devsuperior.hrpayroll.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
