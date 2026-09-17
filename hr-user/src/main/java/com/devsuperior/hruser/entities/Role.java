@@ -12,14 +12,14 @@ public class Role implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String roleNane;
+    private String roleName;
 
     public Role(){
     }
 
     public Role(Long id, String roleNane) {
         this.id = id;
-        this.roleNane = roleNane;
+        this.roleName = roleNane;
     }
 
     public Long getId() {
@@ -30,23 +30,23 @@ public class Role implements Serializable {
         this.id = id;
     }
 
-    public String getRoleNane() {
-        return roleNane;
+    public String getRoleName() {
+        return roleName;
     }
 
-    public void setRoleNane(String roleNane) {
-        this.roleNane = roleNane;
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Role role = (Role) o;
-        return Objects.equals(roleNane, role.roleNane);
+        return Objects.equals(roleName, role.roleName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(roleNane);
+        return Objects.hashCode(roleName);
     }
 }
